@@ -44,9 +44,9 @@ class MainFrame : public MainFrameBase
 		
 	protected:
 		// protected event handlers
-		virtual void OnCloseFrame( wxCloseEvent& event );
-		virtual void OnExitClick( wxCommandEvent& event );
-		virtual void OnAboutClick( wxCommandEvent& event );
+		void OnCloseFrame( wxCloseEvent& event ) override;
+		void OnExitClick( wxCommandEvent& event ) override;
+		void OnAboutClick( wxCommandEvent& event ) override;
 };
 
 #endif //__main__
