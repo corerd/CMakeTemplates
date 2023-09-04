@@ -60,9 +60,11 @@ void MainFrame::OnAboutClick(wxCommandEvent& event)
                     "Welcome to %s!\n"
                     "\n"
                     "This is a wxWidgets template\n"
-                    "running under %s.",
+                    "running under %s.\n"
+                    "\nC/C++ compiler version: %d.%d.%d",
                     wxVERSION_STRING,
-                    wxGetOsDescription()
+                    wxGetOsDescription(),
+                    __GNUC__, __GNUC_MINOR__, __GNUC_PATCHLEVEL__
                  ),
                  "About wxWidgets template",
                  wxOK | wxICON_INFORMATION,
