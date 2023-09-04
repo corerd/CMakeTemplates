@@ -10,15 +10,18 @@ project(HelloWorldGUI VERSION 0.1.0)
 # Define wxWidgets environment variables.
 # WXWIN: the wxWidgets sources root directory
 # WXCFG: the build sub-directory of $WXWIN\lib
-#        specific to compiler and library type (static or dynamic)
-# The better way is to define them as global variables.
-# E.g. in VS Code define them in cmake.environment user settings.
-# Uncomment the 2 lines below to override their global settings:
+#        specifying the compiler and library type (static or dynamic)
+#
+# in VS Code the better way is to define them in cmake.environment settings
+# as Workspace Environment variables.
+# In this way, you can specify a wxWidgets release at Workspace basis.
+#
+# It is possible to override Workspace settings uncommenting the 2 lines below:
 #set(ENV{WXWIN} /path/tp/wxWidgets/sources/root/directory)
 #set(ENV{WXCFG} gcc_lib/mswu)
 
 # Request the required wxWidgets libs
-find_package(wxWidgets 3.2 COMPONENTS core base)
+find_package(wxWidgets COMPONENTS core base)
 
 # Include the wxWidgets use file to initialize various settings
 include(${wxWidgets_USE_FILE})
