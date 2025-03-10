@@ -1,0 +1,6 @@
+{
+    "cmake.environment": {
+        "WXWIN": "D:/Devel/lib/wxWidgets-3.2.2.1",
+        "WXCFG": "gcc_lib/mswu"
+    }
+}
