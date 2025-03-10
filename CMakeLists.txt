@@ -4,7 +4,7 @@
 # in which the project CMakeLists.txt and code files are located.
 
 # Declare the minimum required CMake version
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.5.0)
 
 # Add all the projects sub-directories to the build
 add_subdirectory(HelloWorldCLI)

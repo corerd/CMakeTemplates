@@ -2,7 +2,7 @@
 # in the minimal sample directory.
 
 # Declare the minimum required CMake version
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.5.0)
 
 # Name the project
 project(HelloWorldGUI VERSION 0.1.0)
